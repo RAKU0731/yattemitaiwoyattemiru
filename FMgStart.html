@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/design.css">
+    <link rel="stylesheet" href="CSS/before2.css">
+    <link rel="stylesheet" href="CSS/eachCSS/2Start.css">
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/2Start.js"></script>
+    <script src="JS/style.js"></script>
+    <title>テスト目標設定サイト｜やってみたいをやってみる</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1 class="inheader">やってみたいをやってみる</h1>
+    </header>
+    <main class="wide60">
+        <h2 class="subtitle">期末試験/模試の目標を決めよう</h2>
+        <div>
+            <table class="paddBottom20 Q1table">
+                <tr>
+                    <td>
+                        <h3>目標を決めたいテスト/模試の名前は何ですか？</h3>
+                        <input type="text" name="testName" id="name" class="inputdata">
+                    </td>
+                </tr>
+                <tr id="show-TestDate" class="display-none">
+                    <td>
+                        <h3>目標を決めたいテスト/模試の開催日はいつですか？</h3>
+                        <input type="date" name="testDate" id="date" class="inputdata">
+                    </td>
+                </tr>
+                <tr id="show-MarginDate" class="display-none">
+                    <td>
+                        <h3 id="marginDate"></h3>
+                    </td>
+                </tr>
+                <tr id="show-MarginSubjects" class="display-none">
+                    <td>
+                        <h3>受験する科目は何科目ですか？</h3>
+                        <input type="number" name="testNumber" id="number" class="inputdata" max="20">科目
+                        <p class="pSmallword">※半角数字での入力をお願いします</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="paddBottom20 moveButton buttonHigh">
+            <button class="nextI" id="lastI">前に戻る</button>
+            <button class="nextI" id="nextI">次に進む</button>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="meter">
+            <div class="meter-text"><span>進行度</span><p>0</p><span>%</span></div>
+            <div class="meter-main"><div style="width:0%" class="meter-bar"></div></div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

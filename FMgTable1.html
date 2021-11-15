@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/design.css">
+    <link rel="stylesheet" href="CSS/before2.css">
+    <link rel="stylesheet" href="CSS/eachCSS/4An1.css">
+    <link rel="stylesheet" href="CSS/eachCSS/5Ta1.css">
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/style.js"></script>
+    <script src="JS/5Ta1.js"></script>
+    <title>テスト目標設定サイト｜やってみたいをやってみる</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="inheader">やってみたいをやってみる</h1>
+        </header>
+        <main class="wide60">
+            <h2 class="subtitle">期末試験/模試の目標を決めよう</h2>
+            <h3>前回の得点と、今回のテストの満点を記入しておこう！</h3>
+            <p id="namefull"></p>
+            <p id="namelast"></p>
+            <div class="X-scroll">
+                <table class="paddTop20">
+                    <tr>
+                        <th>教科</th>
+                        
+                        <th id="subjects">合計</th>
+                    </tr>
+                    <tr>
+                        <th>満点</th>
+
+                        <th id="fullScores"></th>
+                    </tr>
+                    <tr>
+                        <th>前回</th>
+
+                        <th id="lastScores"></th>
+                    </tr>
+                </table>
+                <p class="pSmallword">※点数は半角数字での入力をお願いします</p>
+            </div>
+
+
+            <div class="paddBottom20 moveButton buttonHigh">
+                <button class="nextI" id="lastI">前に戻る</button>
+                <button class="nextI" id="nextI">次に進む</button>
+            </div>
+
+        </main>
+        <footer>
+            <div class="meter">
+                <div class="meter-text"><span>進行度</span><p>50</p><span>%</span></div>
+                <div class="meter-main"><div style="width:50%" class="meter-bar"></div></div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
