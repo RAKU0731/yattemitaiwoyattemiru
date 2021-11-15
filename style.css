@@ -1,0 +1,109 @@
+header{
+    /*見た目（サイズ）*/
+    width: 100%;
+    height: 60px;
+    padding: 20px 60px;
+    /*上部固定*/
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    /*内部横並び＆中央補正*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    /*headerの配置headerと高さを合わせるように*/
+    padding-top: 60px;
+    /*文字をセンターに寄せる*/
+    text-align: center;
+}
+.left{
+    /*文字を左寄りにする*/
+    text-align: start;
+    width: 30em;
+    margin: 0 auto;
+}
+.inheader{
+    margin: 0 auto;
+}
+.subtitle{
+    /*上下の隙間について*/
+    padding: 20px 0;
+}
+.paddBottom20{
+    /*下へpaddingの指定*/
+    padding-bottom: 30px;
+}
+.paddTop20{
+    /*上へのpaddingの指定*/
+    padding-top: 20px;
+}
+.padd10 p{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 10px 0;
+}
+.Q1table td{
+    /*入力欄の下について*/
+    border-bottom: solid 1px #252525;
+    /*高さについて*/
+    height: 200px;
+}
+.nextI{
+    padding: 0.8em 1.6em;
+}
+.clear-kotu{
+    margin-bottom:0;
+}
+.display-none{
+    display: none;
+}
+/*次へ・前へのボタン配置↓*/
+.moveButton{
+    position: relative;
+}
+.buttonHigh{
+    height: 60px;
+}
+#nextI{
+    position: absolute;
+    right: 0;
+}
+#lastI{
+    position: absolute;
+    left: 0;
+}
+
+.wide60{
+    /*幅の指定(PC)*/
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 425px){
+    header{
+        /*見た目（サイズ）*/
+        height: 50px;
+        padding: 20px auto;
+    }
+    h1{
+        /*幅を整える*/
+        padding: auto;
+    }
+    .inheader{
+        margin: 0;
+    }
+    .nextI{
+        margin: 0.8em 1.6em;
+    }
+    .buttonHigh{
+        height: 70px;
+    }
+    
+    .wide60{
+        /*幅の指定(Phon)*/
+        width: 90%;
+        margin: 0 auto;
+    }
+}
