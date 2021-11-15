@@ -1,0 +1,11 @@
+table{
+    table-layout: fixed;
+}
+td{
+    padding-bottom: 5px;
+}
+h3{
+    /*上下余白について*/
+    padding-bottom: 10px;
+
+}

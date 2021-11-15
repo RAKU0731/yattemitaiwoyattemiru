@@ -1,0 +1,9 @@
+.width80{
+    width: 80%;
+}
+
+.toolong>td{
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+}

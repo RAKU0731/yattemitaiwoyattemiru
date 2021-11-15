@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #e5ffff;
+    color: #252525;
+}
+header{
+    background: #fff;
+}
+h2{
+    /*文字について*/
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    
+}
+p,li{
+    /*文字について*/
+    font-size: 1.2em;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    /*数字上下ボタンをなくす*/
+    -webkit-appearance: none;
+}
+input[type=radio]{
+    display: none;
+}
+.radiolabel{
+    /*文字について*/
+    font-size: 1.3em;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    /*枠について*/
+    display: inline-block;
+    width: 5em;
+    padding: 7px 5px;
+    border: solid 1px #959595;
+    border-radius: 5px;
+    /*左右の空白*/
+    margin: 5px;
+}
+input[type="radio"]:checked + label{
+    /*枠について*/
+    outline: 0;
+    background: #afefff;
+    border: solid 1px #52c2e7;   
+    box-shadow: 0 0 0 2px #52c2e7;
+}
+input[type=checkbox]{
+    display: none;
+}
+.checkboxlabel {
+    position: relative; /* ボックスの位置を指定する */
+    padding: 0 0 0 42px; /* ボックス内側の余白を指定する */
+}
+.checkboxlabel:hover:after {
+    border-color: #52c2e7; /* ボックスの境界線を実線で指定する */
+}
+.checkboxlabel:after, .checkboxlabel:before{
+    position: absolute; /* ボックスの位置を指定する */
+    content: ""; /* ボックスのコンテンツ */
+    display: block; /* ブロックレベル要素化する */
+    top: 50%; /* 上部から配置の基準位置を決める */
+}
+.checkboxlabel:after {
+    left: 15px; /* 左から配置の基準位置を決める */
+    margin-top: -10px; /* チェック枠の位置 */
+    width: 15px; /* ボックスの横幅を指定する */
+    height: 15px; /* ボックスの高さを指定する */
+    border: 2px solid #959595; /* ボックスの境界線を実線で指定する */
+    border-radius: 6px; /* ボックスの角丸を指定する */
+}
+.checkboxlabel:before {
+    left: 21px; /* 左から配置の基準位置を決める */
+    margin-top: -7px; /* チェックマークの位置 */
+    width: 5px; /* ボックスの横幅を指定する */
+    height: 9px; /* ボックスの高さを指定する */
+    border-right: 3px solid #24c6fb; /* 境界線（右）のスタイルを指定する */
+    border-bottom: 3px solid #24c6fb; /* 境界線（下）のスタイルを指定する */
+    transform: rotate(45deg); /* 要素を回転させる */
+    opacity: 0; /* 要素を透過指定する */
+}
+input[type=checkbox]:checked + .checkboxlabel:before {
+    opacity: 1; /* 要素を表示する */
+}
+.nextI{/*遷移ボタンに使用*/
+    /*デフォルトの解除*/
+    text-decoration: none;
+    /*文字と背景について（通常時）*/
+    color: #252525;
+    background-color: #52c2e7;
+    border-radius: 50px;
+}
+.nextI:hover{
+    /*文字と背景について（ホバー時）*/
+    color: #353535;
+    background-color: #5ad6ff;
+}
+
+.pSmallword{/*小さな注意書きとして使用*/
+    font-size: 0.9em;
+}
+.inputdata{/*inputに対して使用*/
+    /*文字について*/
+    font-size: 1.4em;
+    /*枠について*/
+    border: solid 1px #959595;
+    border-radius: 5px;
+}
+.inputdata:focus{
+    /*枠について*/
+    outline: 0;
+    border: solid 1px #52c2e7;   
+    box-shadow: 0 0 0 2px #52c2e7;
+}
+.inputdatap{/*inputに対して使用（var.small）*/
+    /*文字について*/
+    text-align: center;
+    /*枠について*/
+    width: 90%;
+    border: solid 2px #959595;
+    border-radius: 5px;
+}
+.inputdatap:focus{
+    /*枠について*/
+    outline: 0;
+    border: solid 1px #52c2e7;   
+    box-shadow: 0 0 0 2px #52c2e7;
+}
+.inputdataf{/*inputに対して使用（var.big）*/
+    /*文字について*/
+    font-size: 1.7em;
+    text-align: center;
+    /*枠について*/
+    width: 90%;
+    border: solid 3px #959595;
+    border-radius: 5px;
+}
+.inputdataf:focus{
+    /*枠について*/
+    outline: 0;
+    border: solid 3px #f16868;   
+    box-shadow: 0 0 0 2px #f16868;
+    border-radius: 5px;
+}
+.inputdataf:not(:placeholder-shown){
+    /*枠について*/
+    outline: 0;
+    border: solid 3px #f16868;   
+    box-shadow: 0 0 0 2px #f16868;
+}
+.intabletitle{/*「利用者の回答」と表示（A1tableとセット）*/
+    /*文字について*/
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #355;
+    line-height: 1.5;
+    /*枠について*/
+    width: 8em;
+    
+    border-top: solid 4px #52c2e7;
+    border-left: solid 6px #52c2e7;
+    border-right: solid 4px #52c2e7;
+    border-radius: 15px 15px 0 0;
+}
+.A1table{/*利用者の回答を表示*/
+    /*枠について*/
+    border: solid 6px #52c2e7;
+    border-radius: 0 30px 30px 30px;
+}
+.A1table>p{
+    /*文字について*/
+    font-size: 1.1em;
+    line-height: 1.5;
+    /*上下空白について*/
+    padding: 5px 0;
+}
+.A1table>h3{
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 425px){
+    body{
+        background: #efffff;
+    }
+    h1{
+        /*文字について*/
+        font-size: 1.2em;
+    }
+    h2{
+        /*文字について*/
+        font-size: 1.2em;
+    }
+    p,li{
+        /*文字について*/
+        font-size: 1.0em;
+    }
+    label{
+        /*枠について*/
+        width: 6em;
+    }
+}

@@ -1,0 +1,7 @@
+label{
+    /*左右の空白*/
+    margin: 2px 5px;
+}
+.ranking{
+    table-layout: fixed;
+}

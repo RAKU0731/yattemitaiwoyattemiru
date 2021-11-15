@@ -1,0 +1,60 @@
+footer{
+    /*見た目（サイズ）*/
+    width: 80%;
+    height: 50px;
+    padding: 20px 50px;
+    border-radius: 5px 5px 0 0;
+    /*下部固定*/
+    margin-top: auto;
+    margin: 0 auto;
+    /*footerの色*/
+    background: #bcc;
+}
+.padd10 p{/*一塊を見やすくするため*/
+    /*背景色付け*/
+    background: #fff0e8b9;
+    /*左にradiusのための余白を開ける*/
+    border-radius: 10px;
+    padding-left: 10px;
+    border: #fbe7dd;
+    box-shadow: 0px 0px 2px #fbe7dd;
+}
+.Stitle{/*小見出しとして使用*/
+    /*文字について*/
+    font-size: 1.5em;
+    line-height: 3;
+    letter-spacing: 0.1em;
+    /*枠の色について*/
+    background: #bfe2f7;
+    border: solid 1px #52c2e7;
+    border-radius: 6px;
+}
+.indexLeft p{
+    text-align: start;
+}
+
+@media screen and (max-width: 425px){
+    footer{
+        /*見た目（サイズ）*/
+        width: 80%;
+        height: 40px;
+        padding: 20px 30px;
+        border-radius: 5px 5px 0 0;
+        /*下部固定*/
+        margin-top: auto;
+        margin: 0 auto;
+        /*footerの色*/
+        background: #bcc;
+    }
+    .Stitle{/*小見出しとして使用*/
+        /*文字について*/
+        font-size: 1.3em;
+        line-height: 2;
+        letter-spacing: 0.1em;
+        /*枠の色について*/
+        margin: 10px 0;
+        background: #bfe2f7;
+        border: solid 1px #52c2e7;
+        border-radius: 6px;
+    }
+}
