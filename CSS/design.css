@@ -4,6 +4,9 @@
 body{
     background: #e5ffff;
     color: #252525;
+    font-family: tbudrgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 header{
     background: #fff;
